@@ -1,0 +1,22 @@
+//- MIXINS
+
+include ../mixins/sectionheader.pug
+include ../mixins/sectioncontent.pug
+
+//- ARRAYS VARIOS
+
+-const brands = ["google", "ibm", "microsoft", "hp", "vector-graphics"]
+
+-const footerlinks = ['FAQs', 'Contact Us', 'Privacy Policy', 'Press Kit', 'Install Guide']
+
+-const socials = ["facebook", "twitter", "instagram"]
+
+//- CARDS
+
+-const createBlacklist = {imagen: 'blacklist.svg', alt: 'una lista desplegada', titulo: 'Create blacklists', contenido: 'Ensure sensitive information never makes its way to your clipboard by excluding certain sources.'}
+
+-const plainTextSnippets = {imagen: 'text.svg', alt: 'un cursor escribiendo texto', titulo: 'Plain text snippets', contenido: 'Remove unwanted formatting from copied text for a consistent look.'}
+
+-const sneakPreview = {imagen: 'preview.svg', alt: 'un ojo observando', titulo: 'Sneak preview', contenido: 'Quick preview of all snippets on your Clipboard for easy access.'}
+
+-const cards = [createBlacklist, plainTextSnippets, sneakPreview]

@@ -1,0 +1,37 @@
+// /*! -------------------------
+// Main
+// -------------------------- */
+
+
+// // Helpers y utilidades abstractos (no generan código)
+
+@use './abstract/config';
+
+@use './abstract/variables';
+
+@use './abstract/breakpoints';
+@use './abstract/colors';
+@use './abstract/sizes';
+@use './abstract/functions';
+@use './abstract/mixins';
+@use './abstract/placeholders';
+
+
+// Reseteos y estilos globales (etiquetas, no clases o id)
+@use './base/reset';
+@use './base/base';
+@use './base/typo';
+
+
+// // Componentes reutilizables e independientes
+@use './components/buttons';
+
+
+// // Bloques que conforman el layout
+@use './layout/layout';
+@use './layout/header';
+@use './layout/footer';
+
+
+// // Estilos independientes de cada página
+@use './pages/index';
