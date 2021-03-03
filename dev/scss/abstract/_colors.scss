@@ -8,8 +8,15 @@
 
 $color-primary: rgb(38, 186, 164);
 $color-secondary:rgb(97, 115, 255);
+$color-extra: rgb(255,115,97);
 
-$primarilight: lighten($color-primary, 20%);
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-extra-light: lighten($color-extra, 10%);
+
+$color-primary-dark: darken($color-primary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-extra-dark: darken($color-extra, 10%);
 
 
 // Bg & Fg
@@ -22,8 +29,8 @@ $color-dark: #0C0C0C;
 
 // Texts
 
-$color-text: hsl(210, 10%, 33%);
-$color-label:  hsl(201, 11%, 66%);
+$color-label: hsl(210, 10%, 33%);
+$color-text:  hsl(201, 11%, 66%);
 $color-disabled: #D7D5E0;
 
 

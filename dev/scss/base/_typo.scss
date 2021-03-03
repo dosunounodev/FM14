@@ -11,5 +11,54 @@ html {
 body {
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: $size-md1;
-  font-weight: 400;
+}
+
+h1, h2, h3 {
+  @extend %titulos
+}
+
+h1 {
+  font-size: $size-lg2;
+  @include tablet {
+    font-size: $size-lg4;
+  }
+}
+
+h2 {
+  font-size: $size-lg1;
+  @include tablet {
+    font-size: $size-lg2;
+  }
+}
+
+h3 {
+  font-size: $size-md3;
+  @include tablet {
+    font-size: $size-md4;
+  }
+}
+
+h4, p, small{
+  @extend %textos;
+}
+
+h4 {
+  font-size: $size-md1;
+  @include tablet {
+    font-size: $size-md2;
+  }
+}
+
+p {
+  font-size: $size-sm4;
+  @include tablet {
+    font-size: $size-md1;
+  }
+}
+
+small {
+  font-size: $size-sm2;
+  @include tablet {
+    font-size: $size-sm3;
+  }
 }

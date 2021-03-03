@@ -3,3 +3,46 @@ Buttons
 -------------------------- */
 
 @use "../abstract/config" as *;
+
+
+// CALL TO ACTIONS 
+
+.cta__dload--primary,
+.cta__dload--secondary {
+  @extend %ctas-buttons
+}
+
+.cta__dload--primary {
+
+  background-color: $color-primary;
+  box-shadow: 0 3px 0 0 $color-primary-dark;
+
+  &:hover {
+    background-color: $color-primary-light;
+    box-shadow: 0 3px 0 0 $color-primary;
+  }
+}
+
+.cta__dload--secondary {
+
+  background-color: $color-secondary;
+  box-shadow: 0 3px 0 0 $color-secondary-dark;
+
+  &:hover {
+    background-color: $color-secondary-light;
+    box-shadow: 0 3px 0 0 $color-secondary;
+  }
+}
+
+
+// SOCIAL BUTTONS
+
+.footer-social__item i {
+  font-size: $size-md4;
+  color: darken($color-label, 10%);
+    @extend %animacion-links;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

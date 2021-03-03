@@ -1,12 +1,13 @@
 footer
-  .footer-logo__container
-    img(src="./assets/logos/logo.svg", alt="").footer-logo__img
-  ul.footer-nav__container
-    each link in footerlinks 
-      li.footer-nav__item 
-        a(href="#") #{link}
-  ul.footer-social__container
-    each social in socials
-      li.footer-social__item
-        a(href="#")
-          img(src="./assets/icons/icon-"+social+".svg", alt="Un icono de "+ social)
+  .footer-container
+    .footer-logo__container
+      img(src="./assets/logos/logo.svg", alt="").footer-logo__img
+    ul.footer-nav__container
+      each link in footerlinks 
+        li.footer-nav__item 
+          a(href="#") #{link}
+    ul.footer-social__container
+      each social in socials
+        li.footer-social__item
+          a(href="#")
+            i(class="fab fa-"+social)

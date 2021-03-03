@@ -3,3 +3,31 @@
 // -------------------------- */
 
 @use "./variables" as *;
+@use "./sizes" as *;
+@use "./colors" as *;
+
+%titulos {
+  font-weight: $medium;
+  color: $color-label;
+}
+
+%textos {
+  font-weight: $light;
+  color: $color-text;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+}
+
+%ctas-buttons {
+  padding: 15px;
+  font-size: $size-md1;
+  font-weight: $medium;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  transition-property: box-shadow, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  will-change: box-shadow, background-color;
+  filter: drop-shadow(0 10px 5px lighten($color-text, 15%));
+}

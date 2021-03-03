@@ -1,0 +1,14 @@
+/*! -------------------------
+Animaciones
+-------------------------- */
+
+@use "./variables" as *;
+@use "./sizes" as *;
+@use "./colors" as *;
+
+%animacion-links {
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  will-change: color;
+}

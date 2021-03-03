@@ -9,12 +9,12 @@
     <title>Frontend Mentor | Clipboard landing page</title>
     <meta property="og:title" content="">
     <meta property="og:type" content="">
-    <meta property="og:url" content="">
     <meta property="og:image" content="">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/6043d9e4ba.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -29,7 +29,7 @@
       <section class="section__snippets section" id="section__snippets">
         <header class="section__header">
           <h2 class="section__title">Keep track of your snippets</h2>
-          <p class="section__subtitle">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+          <h4 class="section__subtitle">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</h4>
         </header>
         <div class="snippets-content">
           <div class="snippets-content__part-a">
@@ -48,33 +48,33 @@
       <section class="section__clipboard section" id="section__clipboard">
         <header class="section__header">
           <h2 class="section__title">Access Clipboard anywhere</h2>
-          <p class="section__subtitle">Whether you’re on the go, or at your computer, you can access all your Clipboard  snippets in a few simple clicks.</p>
+          <h4 class="section__subtitle">Whether you’re on the go, or at your computer, you can access all your Clipboard  snippets in a few simple clicks.</h4>
         </header>
         <div class="clipboard-img__container"><img class="clipboard-img__picture" src="./assets/images/image-devices.png" alt=""></div>
       </section>
       <section class="section__workflow section" id="section__workflow">
         <header class="section__header">
           <h2 class="section__title">Supercharge your workflow</h2>
-          <p class="section__subtitle">We’ve got the tools to boost your productivity.</p>
+          <h4 class="section__subtitle">We’ve got the tools to boost your productivity.</h4>
         </header>
         <div class="cards__container"> 
           <div class="card">
             <div class="card__body">
-              <div class="card__img-container"><img src="./assets/icons/blacklist.svg" alt="Una imagen de una lista desplegada"></div>
+              <div class="card__img-container"><img src="./assets/icons/icon-blacklist.svg" alt="Una imagen de una lista desplegada"></div>
               <h3 class="card__subtitle">Create blacklists</h3>
               <p class="card__paragraph">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
             </div>
           </div>
           <div class="card">
             <div class="card__body">
-              <div class="card__img-container"><img src="./assets/icons/text.svg" alt="Una imagen de un cursor escribiendo texto"></div>
+              <div class="card__img-container"><img src="./assets/icons/icon-text.svg" alt="Una imagen de un cursor escribiendo texto"></div>
               <h3 class="card__subtitle">Plain text snippets</h3>
               <p class="card__paragraph">Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
           </div>
           <div class="card">
             <div class="card__body">
-              <div class="card__img-container"><img src="./assets/icons/preview.svg" alt="Una imagen de un ojo observando"></div>
+              <div class="card__img-container"><img src="./assets/icons/icon-preview.svg" alt="Una imagen de un ojo observando"></div>
               <h3 class="card__subtitle">Sneak preview</h3>
               <p class="card__paragraph">Quick preview of all snippets on your Clipboard for easy access.</p>
             </div>
@@ -93,25 +93,27 @@
       <section class="section__iosmac section" id="section__iosmac">
         <header class="section__header">
           <h2 class="section__title">Clipboard for iOS and Mac OS</h2>
-          <p class="section__subtitle">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+          <h4 class="section__subtitle">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</h4>
         </header>
         <div class="ctas"> <a class="cta__dload--primary" href="#">Download for iOS</a><a class="cta__dload--secondary" href="#">Download for Mac</a></div>
       </section>
     </main>
     <footer>
-      <div class="footer-logo__container"><img class="footer-logo__img" src="./assets/logos/logo.svg" alt=""></div>
-      <ul class="footer-nav__container">
-        <li class="footer-nav__item"> <a href="#">FAQs</a></li>
-        <li class="footer-nav__item"> <a href="#">Contact Us</a></li>
-        <li class="footer-nav__item"> <a href="#">Privacy Policy</a></li>
-        <li class="footer-nav__item"> <a href="#">Press Kit</a></li>
-        <li class="footer-nav__item"> <a href="#">Install Guide</a></li>
-      </ul>
-      <ul class="footer-social__container">
-        <li class="footer-social__item"><a href="#"><img src="./assets/icons/icon-facebook.svg" alt="Un icono de facebook"></a></li>
-        <li class="footer-social__item"><a href="#"><img src="./assets/icons/icon-twitter.svg" alt="Un icono de twitter"></a></li>
-        <li class="footer-social__item"><a href="#"><img src="./assets/icons/icon-instagram.svg" alt="Un icono de instagram"></a></li>
-      </ul>
+      <div class="footer-container">
+        <div class="footer-logo__container"><img class="footer-logo__img" src="./assets/logos/logo.svg" alt=""></div>
+        <ul class="footer-nav__container">
+          <li class="footer-nav__item"> <a href="#">FAQs</a></li>
+          <li class="footer-nav__item"> <a href="#">Contact Us</a></li>
+          <li class="footer-nav__item"> <a href="#">Privacy Policy</a></li>
+          <li class="footer-nav__item"> <a href="#">Press Kit</a></li>
+          <li class="footer-nav__item"> <a href="#">Install Guide</a></li>
+        </ul>
+        <ul class="footer-social__container">
+          <li class="footer-social__item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="footer-social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="footer-social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
