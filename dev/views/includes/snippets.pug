@@ -4,7 +4,8 @@ section#section__snippets.section__snippets.section
     .snippets-content__part-a
       .snippets-img__container
         img(src="./assets/images/image-computer.png", alt="").snippets-img__picture
-    .snippets-content__part-b 
-      +sectioncontent('Quick Search', 'Easily search your snippets by content, category, web address, application, and more.')
-      +sectioncontent('iCloud Sync','Instantly saves and syncs snippets across all your devices.')
-      +sectioncontent('Complete History','Retrieve any snippets from the first moment you started using the app.')
+    .snippets-content__part-b
+      .snippets-content__container
+        +sectioncontent('Quick Search', 'Easily search your snippets by content, category, web address, application, and more.')
+        +sectioncontent('iCloud Sync','Instantly saves and syncs snippets across all your devices.')
+        +sectioncontent('Complete History','Retrieve any snippets from the first moment you started using the app.')

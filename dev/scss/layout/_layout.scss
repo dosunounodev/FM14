@@ -3,3 +3,41 @@ Layout
 -------------------------- */
 
 @use "../abstract/config" as *;
+
+body {
+  @extend %flex-column-center;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px
+}
+
+section {
+  @extend %flex-column-center;
+  margin-top: 150px;
+
+  header {
+    max-width: 700px;
+    @extend %flex-column-center;
+    margin-bottom: 50px;
+  }
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  padding: 0 35px;
+}
+
+.section__subtitle {
+  margin-top: 15px;
+  padding: 0 35px;
+
+  @include laptop {
+    margin-top: 25px;
+  }
+}

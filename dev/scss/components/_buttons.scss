@@ -7,9 +7,29 @@ Buttons
 
 // CALL TO ACTIONS 
 
+%ctas-buttons {
+  width: 300px;
+  margin: 0 10px;
+  padding: 15px 30px;
+  font-size: $size-md2;
+  font-weight: $medium;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  transition-property: box-shadow, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  will-change: box-shadow, background-color;
+  filter: drop-shadow(0 10px 5px lighten($color-text, 15%));
+  @include tablet {
+    width: auto
+  }
+}
+
 .cta__dload--primary,
 .cta__dload--secondary {
-  @extend %ctas-buttons
+  @extend %ctas-buttons;
 }
 
 .cta__dload--primary {

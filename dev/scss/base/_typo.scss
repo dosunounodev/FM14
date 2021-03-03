@@ -18,14 +18,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: $size-lg2;
+  font-size: $size-lg1;
   @include tablet {
     font-size: $size-lg4;
   }
 }
 
 h2 {
-  font-size: $size-lg1;
+  font-size: $size-md4;
   @include tablet {
     font-size: $size-lg2;
   }
@@ -43,7 +43,7 @@ h4, p, small{
 }
 
 h4 {
-  font-size: $size-md1;
+  font-size: $size-sm4;
   @include tablet {
     font-size: $size-md2;
   }

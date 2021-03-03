@@ -3,3 +3,290 @@ Index
 -------------------------- */
 
 @use "../abstract/config" as *;
+
+
+
+
+
+
+// ------------------- SNIPPETS
+
+
+
+.section__snippets {
+  header {
+    margin-bottom: 70px
+  }
+}
+
+.snippets-content {
+  @extend %flex-column-center;
+  @include laptop {
+    flex-direction: row;
+  }
+}
+
+.snippets-content__part-a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include laptop {
+    width: 50%;
+  }
+}
+
+.snippets-img__container {
+  width: 85%;
+
+  @include landscape {
+    width: 60%;
+  }
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.snippets-img__picture {
+  display: block;
+  max-width: 100%;  
+}
+
+
+
+.snippets-content__part-b {
+  width: 100%;
+  margin-top: 20px;
+
+  .snippets-content__container {
+    padding: 0 20px;
+    h3, p {
+      text-align: center;
+      @include laptop {
+        text-align: start;
+      }
+    }
+    h3 {
+      margin-top: 50px;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  @include laptop {
+    width: 50%;
+
+    .snippets-content__container {
+      width: 350px;
+      margin-left: 115px;
+    }
+  }
+
+}
+
+
+
+
+
+// ------------------- CLIPBOARD
+
+
+
+.section__clipboard {
+  header {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    @include laptop {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.clipboard-img__container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.clipboard-img__picture {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+// ------------------- WORKFLOW
+
+
+
+.section__workflow {
+  margin-top: 130px;
+  width: 100%;
+
+  header {
+    margin-bottom: 70px
+  }
+}
+
+.cards__container {
+  @extend %flex-column-center;
+  width: 100%;
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.card {
+  margin-bottom: 55px;
+  &:last-child {
+    margin-bottom: 0
+  }
+  @include laptop {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.card__body {
+  @extend %flex-column-center;
+}
+
+.card__img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.card__subtitle {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.card__paragraph {
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+  @include tablet {
+    padding: 0 100px;
+  }
+  @include laptop {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+// ------------------- BRANDS
+
+
+
+.section__brands {
+margin-top: 50px;
+@include tablet {
+  margin-top: 120px
+}
+}
+
+.brands__container {
+  @extend %flex-column-center;
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+}
+
+.brands__logo-container:nth-child(1) {
+  width: 85%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(2) {
+  width: 65%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(3) {
+  width: 80%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(4) {
+  width: 70%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(5) {
+  width: 65%;
+  margin-bottom: 20px;
+  @include tablet {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.brands__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+  @include laptop {
+    margin-top: 0;
+  }
+}
+
+.brands__logo {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+// ------------------- IOSMAC
+
+
+
+.section__iosmac {
+  h4 {
+    padding: 0 32px;
+  }
+
+  .ctas {
+    @extend %flex-column-center;
+  
+  
+  
+    @include tablet {
+      flex-direction: row;
+    }
+    .cta__dload--primary {
+      margin-bottom: 30px;
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+

@@ -17,22 +17,13 @@ h4, p, small {
   font-weight: 400;
   color: #9fabb2;
   letter-spacing: 0.1px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
-.cta__dload--primary,
-.cta__dload--secondary {
-  padding: 15px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-  border-radius: 30px;
-  transition-property: box-shadow, background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  will-change: box-shadow, background-color;
-  filter: drop-shadow(0 10px 5px #c9d0d4);
+.snippets-content, .cards__container, .card__body, .brands__container, .section__iosmac .ctas, body > header, .header-titles, header > .ctas, body, section, section header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*! -------------------------
@@ -241,6 +232,10 @@ textarea {
 /*! -------------------------
 Base
 -------------------------- */
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 /*! -------------------------
 Typo
 -------------------------- */
@@ -254,7 +249,7 @@ body {
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -263,7 +258,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 @media screen and (min-width: 768px) {
   h2 {
@@ -281,7 +276,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 @media screen and (min-width: 768px) {
   h4 {
@@ -310,6 +305,30 @@ small {
 /*! -------------------------
 Buttons
 -------------------------- */
+.cta__dload--primary,
+.cta__dload--secondary {
+  width: 300px;
+  margin: 0 10px;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  will-change: box-shadow, background-color;
+  filter: drop-shadow(0 10px 5px #c9d0d4);
+}
+@media screen and (min-width: 768px) {
+  .cta__dload--primary,
+.cta__dload--secondary {
+    width: auto;
+  }
+}
+
 .cta__dload--primary {
   background-color: #26baa4;
   box-shadow: 0 3px 0 0 #1d907f;
@@ -339,9 +358,103 @@ Buttons
 /*! -------------------------
 Layout
 -------------------------- */
+main {
+  width: 100%;
+  max-width: 1440px;
+}
+
+section {
+  margin-top: 150px;
+}
+section header {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  padding: 0 35px;
+}
+
+.section__subtitle {
+  margin-top: 15px;
+  padding: 0 35px;
+}
+@media screen and (min-width: 1024px) {
+  .section__subtitle {
+    margin-top: 25px;
+  }
+}
+
 /*! -------------------------
 Header
 -------------------------- */
+body > header {
+  width: 100%;
+  background-image: url("../assets/bgs/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position-y: top;
+}
+@media screen and (min-width: 768px) {
+  body > header {
+    background-image: url("../assets/bgs/bg-header-desktop.png");
+    background-size: contain;
+  }
+}
+
+.header-logo__container {
+  margin-top: 130px;
+}
+
+.header-titles {
+  margin-top: 60px;
+  max-width: 700px;
+  padding: 0 32px;
+}
+@media screen and (min-width: 768px) {
+  .header-titles {
+    padding: 0;
+  }
+}
+
+.header-titles__main {
+  text-align: center;
+  margin: 0;
+}
+
+.header-titles__sub {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .header-titles__sub {
+    font-size: 2rem;
+  }
+}
+
+header > .ctas {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  header > .ctas {
+    flex-direction: row;
+  }
+}
+header > .ctas .cta__dload--primary {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  header > .ctas .cta__dload--primary {
+    margin-bottom: 0;
+  }
+}
+
 /*! -------------------------
 Footer
 -------------------------- */
@@ -349,6 +462,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 40px;
   margin-top: 185px;
   background-color: #f4f5f6;
@@ -428,3 +542,256 @@ footer {
 /*! -------------------------
 Index
 -------------------------- */
+.section__snippets header {
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+  .snippets-content {
+    flex-direction: row;
+  }
+}
+
+.snippets-content__part-a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .snippets-content__part-a {
+    width: 50%;
+  }
+}
+
+.snippets-img__container {
+  width: 85%;
+}
+@media screen and (min-width: 421px) {
+  .snippets-img__container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .snippets-img__container {
+    width: 100%;
+  }
+}
+
+.snippets-img__picture {
+  display: block;
+  max-width: 100%;
+}
+
+.snippets-content__part-b {
+  width: 100%;
+  margin-top: 20px;
+}
+.snippets-content__part-b .snippets-content__container {
+  padding: 0 20px;
+}
+.snippets-content__part-b .snippets-content__container h3, .snippets-content__part-b .snippets-content__container p {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .snippets-content__part-b .snippets-content__container h3, .snippets-content__part-b .snippets-content__container p {
+    text-align: start;
+  }
+}
+.snippets-content__part-b .snippets-content__container h3 {
+  margin-top: 50px;
+}
+.snippets-content__part-b .snippets-content__container p {
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .snippets-content__part-b {
+    width: 50%;
+  }
+  .snippets-content__part-b .snippets-content__container {
+    width: 350px;
+    margin-left: 115px;
+  }
+}
+
+.section__clipboard header {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .section__clipboard header {
+    margin-bottom: 100px;
+  }
+}
+
+.clipboard-img__container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.clipboard-img__picture {
+  display: block;
+  max-width: 100%;
+}
+
+.section__workflow {
+  margin-top: 130px;
+  width: 100%;
+}
+.section__workflow header {
+  margin-bottom: 70px;
+}
+
+.cards__container {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .cards__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.card {
+  margin-bottom: 55px;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.card__img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+.card__img-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.card__subtitle {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.card__paragraph {
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .card__paragraph {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card__paragraph {
+    padding: 0 20px;
+  }
+}
+
+.section__brands {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .section__brands {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brands__container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+}
+
+.brands__logo-container:nth-child(1) {
+  width: 85%;
+}
+@media screen and (min-width: 768px) {
+  .brands__logo-container:nth-child(1) {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(2) {
+  width: 65%;
+}
+@media screen and (min-width: 768px) {
+  .brands__logo-container:nth-child(2) {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(3) {
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .brands__logo-container:nth-child(3) {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(4) {
+  width: 70%;
+}
+@media screen and (min-width: 768px) {
+  .brands__logo-container:nth-child(4) {
+    width: 100%;
+  }
+}
+
+.brands__logo-container:nth-child(5) {
+  width: 65%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .brands__logo-container:nth-child(5) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.brands__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+@media screen and (min-width: 1024px) {
+  .brands__logo-container {
+    margin-top: 0;
+  }
+}
+
+.brands__logo {
+  display: block;
+  max-width: 100%;
+}
+
+.section__iosmac h4 {
+  padding: 0 32px;
+}
+@media screen and (min-width: 768px) {
+  .section__iosmac .ctas {
+    flex-direction: row;
+  }
+}
+.section__iosmac .ctas .cta__dload--primary {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section__iosmac .ctas .cta__dload--primary {
+    margin-bottom: 0;
+  }
+}

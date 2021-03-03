@@ -15,19 +15,11 @@
   font-weight: $light;
   color: $color-text;
   letter-spacing: 0.1px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
-%ctas-buttons {
-  padding: 15px;
-  font-size: $size-md1;
-  font-weight: $medium;
-  text-decoration: none;
-  color: white;
-  border-radius: 30px;
-  transition-property: box-shadow, background-color;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
-  will-change: box-shadow, background-color;
-  filter: drop-shadow(0 10px 5px lighten($color-text, 15%));
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

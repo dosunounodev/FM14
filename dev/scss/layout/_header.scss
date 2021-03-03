@@ -3,3 +3,59 @@ Header
 -------------------------- */
 
 @use "../abstract/config" as *;
+
+body > header {
+  @extend %flex-column-center;
+  width: 100%;
+  background-image: url('../assets/bgs/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position-y: top;
+  @include tablet {
+    background-image: url('../assets/bgs/bg-header-desktop.png');
+    background-size: contain;
+  }
+}
+
+.header-logo__container {
+  margin-top: 130px;
+}
+
+.header-titles {
+  @extend %flex-column-center;
+  margin-top: 60px;
+  max-width: 700px;
+  padding: 0 32px;
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.header-titles__main {
+  text-align: center;
+  margin: 0;
+}
+
+.header-titles__sub {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: $size-sm4;
+  @include tablet {
+    font-size: $size-md2;
+  }
+}
+
+header > .ctas {
+  @extend %flex-column-center;
+  margin-top: 50px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+  .cta__dload--primary {
+    margin-bottom: 30px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+}
